@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="19dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="136dp"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password"
+        android:layout_alignBottom="@+id/password"
+        android:layout_toLeftOf="@+id/password"
+        android:text="username:" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/username"
+        android:layout_alignBottom="@+id/username"
+        android:layout_alignLeft="@+id/textView1"
+        android:text="password:" />
+
+    <Button
+        android:id="@+id/loginin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_below="@+id/username"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="76dp"
+        android:text="Go" />
+
+    <Button
+        android:id="@+id/loginout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginin"
+        android:layout_alignBottom="@+id/loginin"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/loginin"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/getout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_toRightOf="@+id/loginout"
+        android:text="退出" />
+
+</RelativeLayout>
